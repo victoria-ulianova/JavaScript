@@ -1,0 +1,38 @@
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function askQuestion(question, answers){
+            var userAnswer = prompt(question);
+            userAnswer = userAnswer.toLowerCase();// toLowerCase - преобразует все символы данной строки в нижний регистр
+            for(var i=0; i<answers.length; i++){
+            if(userAnswer == answers[i]) {
+                alert("Это правильный ответ");
+                score++; // подсчёт
+                return;
+             }
+
+            }
+                alert("Вы не угадали");
+        }
+            var score = 0;
+        /* после alert
+           var question = [
+                 ["Среднее арифметическое между велосипедом и мотоциклом?",["мопед", " "]],
+                 ["По какому пути ещё никто никогда не ходил и не ездил?",["млечному", "млечный"]],
+                 ["Какой человек сможет удержать слона?", ["шахматист", " "]]
+                 ];
+                 var score = 0;
+                 for(var i=0; i< question.length; i++){
+                     var quest = questions[i][0];
+                     var answers = questions[i][1];
+                     askQuestion(quest, answers);
+                     }
+                     alert("Вы угадали " + score + "загадок ");*/
+
+        askQuestion("Среднее арифметическое между велосипедом и мотоциклом?",["мопед", " "]);
+        askQuestion("По какому пути ещё никто никогда не ходил и не ездил?",["млечному", "млечный"]); // " " нельзя дублирование слов
+        askQuestion("Какой человек сможет удержать слона?", ["шахматист", " "]);
+
+        alert("Вы угадали " + score + " загадок ");
+    </script>
