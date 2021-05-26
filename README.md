@@ -34,8 +34,28 @@
 
 ### [Урок 1: Начинаем программировать](https://github.com/victoria-ulianova/JavaScript/tree/main/lesson_1)
 
-1.Переменные
+1. Переменные
 
-2.Типы данных
+2. Типы данных
 
-3.Ветвления
+3. Ветвления
+
+### [Урок 2: Ветвления. Циклы.](https://github.com/victoria-ulianova/JavaScript/tree/main/lesson_2)
+
+1. Вывод без OK.
+ 
+2. Цикл while.
+
+3. Цикл for.
+ 
+4. Цикл do while.
+
+### [Урок 3: Массивы и функции.](https://github.com/victoria-ulianova/JavaScript/tree/main/lesson_3)
+
+1. Массивы.
+ 
+  a. Многомерные массивы.
+  
+2. Функции.
+ 
+  a. Рекурсии.
