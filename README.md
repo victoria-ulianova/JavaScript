@@ -31,3 +31,9 @@
 ***
 
 ## Оглавление
+
+### [Урок 1: Начинаем программировать](https://github.com/victoria-ulianova/JavaScript/tree/main/lesson_1)
+
+1.Переменные.
+2.Типы данных.
+3.Ветвления.
