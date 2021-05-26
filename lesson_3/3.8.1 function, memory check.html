@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function compareAswers(userAnswer,answer){
+            if(userAnswer == answer){
+                alert("Всё верно!");
+            }else{
+                alert("А вот и нет. Правильный ответ "+ answer);
+            }
+
+        }
+        function getRandomNumber(max){
+            return Math.round(Math.random()*max);
+        }
+        function generateRandomNumberArray(length) {
+            var arr = [];
+            /*numbers.push(42);//42
+        numbers.push(18);//42,18
+        numbers.push(56);//42,18,56
+        numbers.pop();   //42,18
+        var m= numbers.pop();//18 а в numbers 42*/
+            for (var i = 0; i < length; i++) {
+                var randomNumber = getRandomNumber(100);
+                arr.push(randomNumber);
+            }
+            return arr;
+        }
+        var numbers = generateRandomNumberArray(5);
+        alert("Запомните числа и их порядок: " +numbers);
+
+        var userAnswer = +prompt("Какое было первое число?");
+        compareAswers(userAnswer,numbers[0]);
+
+        userAnswer = +prompt("А последнее?");
+        //alert(numbers[4]); Нехорошо так делать!
+        compareAswers(userAnswer,numbers[numbers.length -1]);
+
+        var n = getRandomNumber(numbers.length-1);
+        userAnswer = +prompt("А как насёт числа под номером " +(n+1) +" ?");
+        compareAswers(userAnswer,numbers[n]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
