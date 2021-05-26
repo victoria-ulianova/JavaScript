@@ -1,0 +1,29 @@
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+   var answer = parseInt(Math.random()*100);
+   var playerNumber = 1;
+   while(true){// для бесконечного цикла
+       var userAnswer = prompt("Угадайте число от 0 до 100.\n Ходит игрок "+playerNumber + ".\n Для выхода нажмите q");
+       if(userAnswer =="q")
+           break;
+       userAnswer = parseInt(userAnswer);
+       if(userAnswer == answer){
+           alert("Поздравляю! Победил игрок "+playerNumber);
+           break;
+           /* continue - сразу переходим к следующей итерации */
+       } else if(userAnswer > answer){
+           alert("Вы ввели слишком большое число");
+       } else if(userAnswer < answer){
+           alert("Вы ввели слишком маленькое число");
+       }
+       if(playerNumber == 1)
+           playerNumber = 2;
+       else
+           playerNumber = 1;
+   }
+    alert("Правильный ответ: "+ answer);
+    </script>
+
+
