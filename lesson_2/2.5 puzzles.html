@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var answer = prompt("Среднее арифметическое между велосипедом и мотоциклом?");
+        answer = answer.toLowerCase();
+        var point = 0; // 2 переменные подсчёта и ответов
+        if(answer == "мопед"){
+            alert("Здорово,это правильный ответ!");
+            point++
+        }else{
+            alert("Вы не угадали");
+        }
+        answer = prompt("По какому пути ещё никто никогда не ходил и не ездил?");
+        answer = answer.toLowerCase();
+        if(answer == "млечный путь"||  answer == "млечному пути"){
+            alert("Отлично, это правильный ответ!");
+            point++
+        } else{
+            alert("Вы не угадали");
+        }
+        answer = prompt("Какой человек сможет удержать слона?");
+        answer = answer.toLowerCase();
+        if(answer == "шахматист"){
+            alert("Молодец, вы угадали!");
+            point++
+        }else{
+            alert("Вы не угадали");
+        }
+        answer = prompt("Бывает лёгкой и тяжёлой, но ничего не весит. Бывает быстрой и медленной, но не ходит, не бегает, не летает");
+        answer = answer.toLowerCase();
+        if(answer == "музыка"|| answer == "мелодия"){
+            alert("Поздравляю, это правильный ответ!");
+            point++
+        }else {
+            alert("Вы не угадали");
+        }
+        alert("Вы набрали: " +point+ " балла");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
