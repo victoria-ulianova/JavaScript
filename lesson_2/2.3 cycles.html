@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    Привет!<br/> <!--<br/> html-->
+    Привет!<br/>
+    Привет!<br/>
+    Привет!<br/>
+    Привет!<br/>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+    <script>
+        for(i=0; i<5; i++){
+            document.write("Привет!  <br />");
+        }
+   /* var i=0;
+    while(i<5) {
+        document.write(" Привет! <br /> ");
+       i++ // i=i+1; то же самое
+    }*/
+
+    </script>
+
+<script>
+    document.write("<strong>Привет!</strong><br>");//strong жирно
+    document.write("I am <em>HTML!</em><br>");// em курсив
+</script>
+
+
+
+<script>
+    var start=10;      // начало отсчёта(включительно)
+    var n=16;          // до какого числа считаем
+    var sum = 0;       // здесь будем хранить сумму всех чисел от start до n
+    var step = 2;      // шаг
+    var next = start;  // следующее число
+    while(next<=n) {
+        sum = sum + next;
+        next = next + step;
+    }
+            document.write("Значение первого числа: " + start + "<br>");
+            document.write("Число до которого считаем: " + n + "<br>");
+            document.write("Шаг: " + step + "<br>");
+            document.write("Итоговая сумма: " + sum + "<br>");
+
+</script>
+
