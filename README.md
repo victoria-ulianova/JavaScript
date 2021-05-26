@@ -11,7 +11,7 @@
 
 Здесь вы найдете:
 
-- игры в загадки,
+- [игры в загадки](https://github.com/victoria-ulianova/JavaScript/blob/main/lesson_2/2.5%20puzzles.html),
 
 - угадайку для одного или двух игроков,
 
