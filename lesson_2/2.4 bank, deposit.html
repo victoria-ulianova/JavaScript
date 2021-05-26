@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var s = +prompt("Введите значение первоначального взноса s:");
+        var p = +prompt("Ежегодный процент p:");
+        var q = p/100;
+        var s1 = s+s*q;
+        var s2 = s1+s1*q;
+        var s3 = s2+s2*q;
+        var s4 = s3+s3*q;
+        var s5 = s4+s4*q;
+        alert(
+            "первоначальный взнос = " +s+ " рублей\n"+
+            "1 год = " +s1.toFixed(2)+ " рублей\n"+
+            "2 год = " +s2.toFixed(2)+ " рублей\n"+
+            "3 год = " +s3.toFixed(2)+ " рублей\n"+
+            "4 год = " +s4.toFixed(2)+ " рублей\n"+
+            "5 год = " +s5.toFixed(2)+ " рублей "
+        );
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    var sum = +prompt("Введите сумму вклада: ");
+    var percent = +prompt("Введите процент для начисления: ");
+    percent = percent/100;
+    var result = "Изменение размера вклада по годам:\n";
+    for(var i=1;i<=5;i++){ //i для распределения текста ,строчек
+        sum=sum+(sum*percent);
+        result +=i + "год: " + sum.toFixed(2)+ "рублей\n";
+    }
+    alert(result);
+</script>
+
