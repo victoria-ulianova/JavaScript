@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        var a = 74.07;
+        var b = 89.84;
+        alert( "Курс валют в рублях:  $" + a + '  €' + b);
+        var c = prompt("Сколько рублей вы хотите сконвертировать ?");
+        c = parseInt(c);
+        var d = c/a;
+        var e = c/b;
+        alert(
+            c + ' рублей = '+ d.toFixed(2) +' долларов \n '+
+            c + ' рублей = ' + e.toFixed(2) +' евро');
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
